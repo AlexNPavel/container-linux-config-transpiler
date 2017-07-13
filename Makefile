@@ -28,11 +28,11 @@ clean:
 release: \
 	_output/unknown-linux-gnu/ct \
 	_output/apple-darwin/ct \
-	_output/pc-windows-gnu/ct
+	_output/pc-windows-gnu.exe/ct
 
 _output/unknown-linux-gnu/ct: GOARGS = GOOS=linux GOARCH=amd64
 _output/apple-darwin/ct: GOARGS = GOOS=darwin GOARCH=amd64
-_output/pc-windows-gnu/ct: GOARGS = GOOS=windows GOARCH=amd64
+_output/pc-windows-gnu.exe/ct: GOARGS = GOOS=windows GOARCH=amd64
 
 _output/%/ct: NAME=_output/ct-$(VERSION)-x86_64-$*
 _output/%/ct:
