@@ -69,9 +69,9 @@ var platformTemplatingMap = map[string]map[string]string{
 		fieldV4Private: "COREOS_OPENSTACK_IPV4_LOCAL",
 		fieldV4Public:  "COREOS_OPENSTACK_IPV4_PUBLIC",
 	},
-	platform.VagrantVirtualbox: {
-		fieldHostname:  "COREOS_VAGRANT_VIRTUALBOX_HOSTNAME",
-		fieldV4Private: "COREOS_VAGRANT_VIRTUALBOX_PRIVATE_IPV4",
+	platform.Virtualbox: {
+		fieldHostname:  "COREOS_VIRTUALBOX_HOSTNAME",
+		fieldV4Private: "COREOS_VIRTUALBOX_IPV4_PRIVATE",
 	},
 }
 

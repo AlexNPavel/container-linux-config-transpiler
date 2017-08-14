@@ -21,7 +21,7 @@ const (
 	GCE               = "gce"
 	Packet            = "packet"
 	OpenStackMetadata = "openstack-metadata"
-	VagrantVirtualbox = "vagrant-virtualbox"
+	Virtualbox        = "virtualbox"
 )
 
 var Platforms = []string{
@@ -31,7 +31,7 @@ var Platforms = []string{
 	GCE,
 	Packet,
 	OpenStackMetadata,
-	VagrantVirtualbox,
+	Virtualbox,
 }
 
 func IsSupportedPlatform(platform string) bool {
